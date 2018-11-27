@@ -1,0 +1,16 @@
+</dependencies>
+
+<distributionManagement>
+<repository>
+<id>releaseRepo</id>
+<name>releaseRepo</name>
+<url>http://192.168.56.101:8081/nexus/content/repositories/releaseRepo/</url>
+</repository>
+
+<snapshotRepository>
+<id>snapshotRepo</id>
+<name>snapshotRepo</name>
+<url>http://192.168.56.101:8081/nexus/content/repositories/snapshotRepo/</url>
+</snapshotRepository>
+</distributionManagement>
+

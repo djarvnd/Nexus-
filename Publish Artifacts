@@ -1,0 +1,20 @@
+To publish the artifacts you can use:
+mvn deploy
+
+You will get unauthorized error, fix the error by adding settings.xml file in local repo
+vim ~/.m2/settings.xml
+<settings>
+<servers>
+    <server>
+      <id>releaseRepo</id>
+      <username>admin</username>
+      <password>admin123</password>
+</server>
+<servers>
+    <server>
+      <id>snapshotRepo</id>
+      <username>admin</username>
+      <password>admin123</password>
+</server>
+</settings>
+

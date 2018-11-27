@@ -1,0 +1,13 @@
+Nexus Installation
+
+Download the Nexus 
+wget http://www.sonatype.org/downloads/nexus-latest-bundle.tar.gz
+
+Once the archive is downloaded extract it
+tar xf nexus-2.x.x.tar.gz
+The bin folder contains the generic startup scripts for Unix-like platforms called nexus
+./nexus start
+Once the repository manager is started, By default port 8081 is used. To access the web application user interface, fire up a web browser and type in the URL http://serveripaddress:port/nexus
+netstat -ntpl | grep 8081
+ps -ef | grep nexus
+The repository manager installation includes an administrative user with full access. Its username is admin and the password is admin123
